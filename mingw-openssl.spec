@@ -24,7 +24,7 @@
 
 Name:           mingw-openssl
 Version:        1.0.2h
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        MinGW port of the OpenSSL toolkit
 
 License:        OpenSSL
@@ -512,6 +512,9 @@ mkdir -m700 $RPM_BUILD_ROOT%{mingw64_sysconfdir}/pki/CA/private
 
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.0.2h-2
+- Rebuild with GCC 5.4.0
+
 * Sat May  7 2016 Erik van Pienbroek <epienbro@fedoraproject.org> - 1.0.2h-1
 - Synced with native openssl-1.0.2h-1
 - Fixes RHBZ #1332591 #1332589 #1330104 #1312861 #1312857 #1307773 #1302768
